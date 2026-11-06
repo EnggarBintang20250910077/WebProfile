@@ -1,0 +1,475 @@
+/* =================================
+   PENGATURAN DASAR WEBSITE
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2f8;
+    color: #263746;
+    line-height: 1.6;
+}
+
+/* =================================
+   CONTAINER UTAMA
+================================= */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 25px auto;
+    background-color: white;
+    border: 2px solid #174d78;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* =================================
+   HEADER
+================================= */
+header {
+    background-color: #07528c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.foto-header {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   MENU NAVIGASI
+================================= */
+nav {
+    background-color: #f4c542;
+    padding: 13px 8px;
+    border-radius: 6px;
+}
+
+nav a {
+    color: #123b5d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* =================================
+   BANNER
+================================= */
+.banner {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0b609c;
+    padding: 15px;
+}
+
+.banner img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.banner h2 {
+    color: #ffdf62;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.banner p {
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* =================================
+   BAGIAN ISI WEBSITE
+================================= */
+.isi {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.konten-kiri {
+    flex: 3;
+    min-width: 0;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 190px;
+}
+
+/* =================================
+   PANEL / KOTAK KONTEN
+================================= */
+.panel {
+    background-color: #ffffff;
+    border: 1px solid #cbd9e5;
+    border-left: 5px solid #07528c;
+    border-radius: 7px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+}
+
+.panel h2,
+.panel h3 {
+    color: #07528c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f4c542;
+    padding-bottom: 8px;
+}
+
+/* =================================
+   BIODATA
+================================= */
+.biodata {
+    min-height: 250px;
+}
+
+.isi-biodata {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.teks-biodata {
+    flex: 1;
+    min-width: 0;
+}
+
+.baris-biodata {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    gap: 5px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.baris-biodata span:first-child {
+    font-weight: bold;
+    color: #07528c;
+}
+
+.foto-biodata {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.foto-biodata img {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid #f4c542;
+    border-radius: 8px;
+}
+
+/* =================================
+   RIWAYAT PENDIDIKAN
+================================= */
+.riwayat p {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eef5fa;
+    border-left: 4px solid #f4c542;
+    border-radius: 4px;
+}
+
+/* =================================
+   JADWAL KULIAH
+================================= */
+.tabel-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabel-jadwal {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: white;
+}
+
+.tabel-jadwal th {
+    background-color: #07528c;
+    color: white;
+    padding: 13px 9px;
+    text-align: center;
+    border: 1px solid #d3dce4;
+}
+
+.tabel-jadwal td {
+    padding: 12px 9px;
+    border: 1px solid #d3dce4;
+    vertical-align: top;
+}
+
+.tabel-jadwal tbody tr:nth-child(odd) {
+    background-color: #edf2f6;
+}
+
+.tabel-jadwal tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tabel-jadwal tbody tr:hover {
+    background-color: #fff1bd;
+}
+
+/* =================================
+   PROFIL KELUARGA
+================================= */
+#profil-keluarga p {
+    padding: 10px;
+    background-color: #eef5fa;
+    border-radius: 5px;
+}
+
+/* =================================
+   SIDEBAR
+================================= */
+.kotak-sidebar {
+    background-color: #edf4f9;
+    border: 1px solid #cbd9e5;
+    border-top: 5px solid #f4c542;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.kotak-sidebar h2 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #07528c;
+}
+
+.kotak-sidebar h2 a {
+    color: #07528c;
+    text-decoration: none;
+}
+
+.kotak-sidebar a {
+    display: block;
+    color: #294b65;
+    text-decoration: none;
+    padding: 9px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 4px;
+    border-left: 3px solid #f4c542;
+    font-size: 14px;
+}
+
+.kotak-sidebar a:hover {
+    background-color: #07528c;
+    color: white;
+}
+
+/* =================================
+   FOOTER
+================================= */
+footer {
+    background-color: #07528c;
+    color: #ffdf62;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* =================================
+   TAMPILAN HP / RESPONSIVE
+================================= */
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .isi {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .konten-kiri,
+    .sidebar {
+        width: 100%;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .banner h2 {
+        font-size: 21px;
+    }
+
+    .isi-biodata {
+        gap: 10px;
+    }
+
+    .baris-biodata {
+        grid-template-columns: 125px 1fr;
+        font-size: 13px;
+    }
+
+    .foto-biodata {
+        width: 110px;
+    }
+
+    .foto-biodata img {
+        width: 110px;
+        height: 145px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .isi-biodata {
+        flex-direction: column-reverse;
+    }
+
+    .foto-biodata {
+        width: 120px;
+    }
+
+    .foto-biodata img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .baris-biodata {
+        grid-template-columns: 120px 1fr;
+        font-size: 12px;
+    }
+}
+.kotak-sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #173b70;
+    background-color: #f4f7fc;
+    padding: 12px;
+    margin: 8px 0;
+    border-left: 4px solid #e6b52e;
+    border-radius: 5px;
+}
+
+.kotak-sidebar a:hover {
+    background-color: #ffdf70;
+    color: #092b59;
+}
+/* TAMPILAN PROFIL KELUARGA */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #123b78;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+hr {
+    border: 2px solid #e6b800;
+}
+
+#menu {
+    color: #123b78;
+    text-align: center;
+    margin: 25px 0;
+}
+
+details {
+    background-color: white;
+    border: 2px solid #e6b800;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #123b78;
+    cursor: pointer;
+    padding: 8px;
+}
+
+details h2 {
+    color: #123b78;
+}
+
+details img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #e6b800;
+}
+
+details p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+details a {
+    display: inline-block;
+    color: white;
+    background-color: #123b78;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+details a:hover {
+    background-color: #e6b800;
+    color: black;
+}
