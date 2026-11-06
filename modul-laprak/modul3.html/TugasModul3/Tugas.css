@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2ff;
+    color: #333;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #123c69;
+    text-align: center;
+}
+
+h2 {
+    color: #123c69;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #245b91;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #123c69;
+    object-fit: cover;
+}
+
+p, ul {
+    font-size: 15px;
+}
+
+hr {
+    border: 1px solid #b8cce4;
+}
+
+body {
+    background-color: #f0f5ff;
+}

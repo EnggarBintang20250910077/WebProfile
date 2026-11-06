@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2ff;
+    color: #123c69;
+    margin: 30px;
+    padding: 20px;
+}
+
+font[size="7"] {
+    font-weight: bold;
+    color: #123c69;
+}
+
+font[size="5"] {
+    color: #2874a6;
+    font-weight: bold;
+}
+
+font[size="3"] {
+    color: #333;
+    line-height: 1.6;
+}
+
+hr {
+    height: 4px;
+    background-color: #123c69;
+    border: none;
+    border-radius: 5px;
+}
