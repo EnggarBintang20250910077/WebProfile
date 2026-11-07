@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modul 2 - Tugas</title>
+    <style>
+        :root {
+            --bg: #f5f7fa;
+            --surface: #ffffff;
+            --text: #1f2933;
+            --muted: #5f6b7a;
+            --line: #d8dee6;
+            --accent: #1d4ed8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #14181d;
+                --surface: #1c2229;
+                --text: #e6eaef;
+                --muted: #9aa5b1;
+                --line: #2c3540;
+                --accent: #7aa2ff;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        header, main, footer {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1.25rem;
+        }
+        header { padding-top: 2rem; }
+        h1 { margin: 0 0 .25rem; font-size: 1.75rem; }
+        header p { margin: 0; color: var(--muted); }
+        a { color: var(--accent); }
+        .tugas {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .tugas h2 { margin: 0 0 .75rem; font-size: 1.15rem; }
+        .tugas img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--line);
+            cursor: zoom-in;
+        }
+        footer { color: var(--muted); font-size: .9rem; }
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .85);
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            z-index: 10;
+            cursor: zoom-out;
+        }
+        #lightbox.aktif { display: flex; }
+        #lightbox img { max-width: 100%; max-height: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modul 2</h1>
+        <p>Kumpulan tugas praktikum modul 2.</p>
+        <p><a href="../../index.html">Kembali ke beranda</a></p>
+    </header>
+
+    <main>
+        <section class="tugas">
+            <h2>Tugas 1</h2>
+            <img src="TUGAS 1.png" alt="Tugas 1">
+        </section>
+
+        <section class="tugas">
+            <h2>Tugas 2</h2>
+            <img src="TUGAS 2.png" alt="Tugas 2">
+        </section>
+
+        <section class="tugas">
+            <h2>Tugas 3</h2>
+            <img src="TUGAS 3.png" alt="Tugas 3">
+        </section>
+
+        <section class="tugas">
+            <h2>Tugas 4</h2>
+            <img src="TUGAS 4.png" alt="Tugas 4">
+        </section>
+
+        <section class="tugas">
+            <h2>Tugas 5</h2>
+            <img src="TUGAS 5.png" alt="Tugas 5">
+        </section>
+    </main>
+
+    <footer>
+        <p>Klik gambar untuk memperbesar.</p>
+    </footer>
+
+    <div id="lightbox"><img alt=""></div>
+
+    <script>
+        var kotak = document.getElementById("lightbox");
+        var gambarBesar = kotak.querySelector("img");
+
+        document.querySelectorAll(".tugas img").forEach(function (img) {
+            img.addEventListener("click", function () {
+                gambarBesar.src = img.src;
+                gambarBesar.alt = img.alt;
+                kotak.classList.add("aktif");
+            });
+        });
+
+        kotak.addEventListener("click", function () {
+            kotak.classList.remove("aktif");
+        });
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") kotak.classList.remove("aktif");
+        });
+    </script>
+</body>
+</html>
